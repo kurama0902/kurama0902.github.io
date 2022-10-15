@@ -409,8 +409,12 @@ form {
     min-width: 415px;
   }
 
-  ul {
-    list-style: none;
+  .logo {
+    margin-bottom: 40px;
+  }
+
+  .text {
+    padding: 0;
   }
 
   .background-top {
@@ -461,5 +465,29 @@ form {
 
   .item-6 {
     text-align: center;
+  }
+
+  .footer ul li::after {
+    content: "";
+    display: none;
+  }
+
+  .footer ul {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  .text h1 {
+    text-align: center;
+  }
+
+  .text p br {
+    display: none;
+  }
+
+  .text p {
+    margin-bottom: 20px;
+    margin-left: 10px;
   }
 }
