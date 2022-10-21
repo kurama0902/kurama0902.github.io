@@ -1,116 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-
-    <title>Help</title>
+    <title>Coffee</title>
 </head>
-
 <body>
-    <div class="background-top">
-        <header class="width-container">
-            <a class="logo" href="#"><img #id="logo" style="margin: auto;" src="img/Logo.png" alt="logo"></a>
-            <ul class="flex-menu">
-                <li id="fb"><a href="https://facebook.com" target='_blank'><img src="img/fb.png" alt="facebook"></a>
-                </li>
-                <li id="inst"><a href="https://instagram.com" target='_blank'><img src="img/inst.png"
-                            alt="instagram"></a></li>
-                <li id="msg"><a href="#feedBack-form"><span>Зв'язатись</span><img src="img/msg.png" alt=""></a></li>
+    <header class="header">
+        <div class="first-block">
+            <img class="burger" src="img/burger.svg" alt="">
+            <a href=""><img class="logo" src="img/logo.svg" alt=""></a>
+            <ul class="nav">
+                <li><a href="">Створити каву</a></li>
+                <li><a href="">Наша команда</a></li>
+                <li><a href="">Меню</a></li>
+                <li><a href="">Бронь стола</a></li>
+                <li><a href="">Про нас</a></li>
+                <li><a href="">Контакти</a></li>
             </ul>
-        </header>
-        <main>
-            <h5>ПІДТРИМАЙТЕ БЛАГОДІЙНІСТЬ</h5>
-            <h2>Ми вже почали допомагати.<br><span>Допоможіть і Ви.</span></h2>
-            <ul>
-                <li>Допомагаємо діткам,які знаходяться в дитячому<br>будинки і дітям ,які вимушено покинули
-                    свої<br>будинки внаслідок війни</li>
-                <li>Допомагаємо людям похилого віку ,які<br>знаходяться в пансіонаті</li>
-                <li>Допомагаємо адресно людям ,які надають запити</li>
-            </ul>
-            <div class="container">
-                <div class="inside-container">
-                    <a href="#" class="help-us">Допомогти<img class="heart" src="img/Union.png" alt=""></a>
-                    <a href="#" class="receieve-help">Отримати допомогу</a>
-                </div>
+            <button class="profile"></button>
+        </div>
+        <div class="second-block">
+            <img class="divider" src="img/divider.svg" alt="">
+        </div>
+    </header>
+    <div class="slider">
+        <img class="img-back" src="img/img.jpg" alt="">
+        <div class="search">
+            <div class="wrapper">
+                <img class="search-image" src="img/search.svg" alt="">
+                <input class="search-input" placeholder="Пошук" type="text">
             </div>
-        </main>
-    </div>
-    <div class="center-container">
-        <div class="photo-container">
-            <div class="text">
-                <h1>Фотозвіт</h1>
-                <p>Lorem Ipsum passages, and more recently with desktop publishing<br>software like Aldus PageMaker
-                    including versions of Lorem Ipsum.<br>Lorem Ipsum passages, and more recently with desktop
-                    publishing<br>software like Aldus PageMaker including.</p>
-            </div>
-            <div class="photo-report">
-                <div class="img-wrap">
-                    <img class="flex-item item-1" src="img/1.png" alt="">
-                </div>
-                <div class='img-wrap'>
-                    <img class="flex-item item-2" src="img/2.png" alt="">
-                </div>
-                <div class='img-wrap'>
-                    <img class="flex-item item-4" src="img/3.png" alt="">
-                </div>
-                <div class='img-wrap'>
-                    <img class="flex-item item-5" src="img/4.png" alt="">
-                </div>
-                <div class='img-wrap'>
-                    <img class="flex-item item-3" src="img/5.png" alt="">
-                </div>
-                <div class='img-wrap item-6'>
-                    <h4>Звіт за 21.05.2022</h4>
-                    <ul>
-                        <li>допомога дитячому садку</li>
-                        <li>допомога центру</li>
-                        <li>допомога переселенцям</li>
-                    </ul>
-                </div>
-            </div>
+            <img class="miсro" src="img/micro.svg" alt="">
         </div>
     </div>
-    <div id='feedBack-form'>
-        <div class="question">
-            <h2>Потрібна домомога чи можете допопомогти?</h2>
-            <h1>Ми раді почути Вас!</h1>
+    <div class="goods-container">
+        <div class="text-container">
+            <p>Популярне</p>
+            <a href="">Все меню</a>
         </div>
-        <div class="form-container">
-            <form action="">
-                <div class="info">
-                    <div class="input-container">
-                        <label class="name" for="name">You're name</label>
-                        <input id='name' class="input-info" type="text" placeholder="Петренко Василь">
+        <div class="goods">
+            <div class="item">
+                <img src="img/goods/1.png" alt="">
+                <button class="heart-button"><img class="heart-img" src="img/heart.svg" alt=""></button>
+                <p class="description">Опис</p>
+                <div class="buy">
+                    <div class="price">
+                        <p>300gr</p>
+                        <p>100 UAH</p>
                     </div>
-                    <div class="input-container">
-                        <input class="input-info" type="email" placeholder="v.petrenko@gmail.com">
-                        <label class="email" for="name">You're email</label>
+                    <div class="add-item">
+                        <button class="add"></button>
                     </div>
                 </div>
-                <textarea class="details" cols="30" rows="10" placeholder="Потрібна допомога"></textarea>
-                <button class="submit" type="submit">Відправити</button>
-            </form>
+            </div>
+            <div class="item">
+                <img src="img/goods/2.png" alt="">
+                <button class="heart-button"><img class="heart-img" src="img/heart.svg" alt=""></button>
+                <p class="description">Опис</p>
+                <div class="buy">
+                    <div class="price">
+                        <p>300gr</p>
+                        <p>100 UAH</p>
+                    </div>
+                    <div class="add-item">
+                        <button class="add"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/goods/3.png" alt="">
+                <button class="heart-button"><img class="heart-img" src="img/heart.svg" alt=""></button>
+                <p class="description">Опис</p>
+                <div class="buy">
+                    <div class="price">
+                        <p>300gr</p>
+                        <p>100 UAH</p>
+                    </div>
+                    <div class="add-item">
+                        <button class="add"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/goods/4.png" alt="">
+                <button class="heart-button"><img class="heart-img" src="img/heart.svg" alt=""></button>
+                <p class="description">Опис</p>
+                <div class="buy">
+                    <div class="price">
+                        <p>300gr</p>
+                        <p>100 UAH</p>
+                    </div>
+                    <div class="add-item">
+                        <button class="add"></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <footer class="footer">
-        <ul>
-            <li>© 2022 Starting Help</li>
-            <li class="decor">Статут благодійної організації</li>
-            <li class="decor">Відмітка в державному реєстрі</li>
-            <li class="decor">м.Чернівці</li>
-        </ul>
-    </footer>
 </body>
-
 </html>
