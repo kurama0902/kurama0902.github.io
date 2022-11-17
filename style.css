@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
+}
+
 body {
     background-color: #161616;
 }
@@ -20,7 +24,7 @@ body {
     justify-content: space-between;
 }
 
-.burger {
+.burger-wrap {
     display: none;
 }
 
@@ -218,6 +222,40 @@ body {
     flex-grow: 1;
 }
 
+.popup-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(52, 48, 48);
+    width: 230px;
+    right: 25px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.popup-menu-link {
+    display: flex;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+#auth {
+    height: 60px;
+}
+
+#rit {
+    height: 20px;
+}
+
+#footr {
+    height: 40px;
+}
+
 @keyframes loop {
     0% {opacity: 1;}
     50% {opacity: 0;}
@@ -234,9 +272,27 @@ body {
         display: none;
     }
 
-    .burger {
+    .burger-wrap {
         display: block;
+        position: relative;
+        transition: all .4s;
     }
+
+    .burger-wrap:hover .popup-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .burger-wrap:hover {
+        background-color: white;
+    }
+
+    .popup-menu-link:hover {
+        background-color: aliceblue;
+        color: #161616;
+    }
+    
 }
 
 @media (max-width:1165px) {
