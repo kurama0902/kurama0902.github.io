@@ -4,104 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <title>Coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/ico/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Жрець Ілля</title>
 </head>
 <body>
-    <header class="header">
-        <div class="first-block">
-            <img class="burger" src="img/burger.svg" alt="">
-            <a href=""><img class="logo" src="img/logo.svg" alt=""></a>
-            <ul class="nav">
-                <li><a href="">Створити каву</a></li>
-                <li><a href="">Наша команда</a></li>
-                <li><a href="">Меню</a></li>
-                <li><a href="">Бронь стола</a></li>
-                <li><a href="">Про нас</a></li>
-                <li><a href="">Контакти</a></li>
-            </ul>
-            <button class="profile"></button>
-        </div>
-        <div class="second-block">
-            <img class="divider" src="img/divider.svg" alt="">
-        </div>
-    </header>
-    <div class="slider">
-        <img class="img-back" src="img/img.jpg" alt="">
-        <div class="search">
-            <div class="wrapper">
-                <img class="search-image" src="img/search.svg" alt="">
-                <input class="search-input" placeholder="Пошук" type="text">
+    <div class="header-wrap">
+        <header class="header">
+            <a href="#sldr" class="logo header-item">Головна</a>
+            <div class="header-nav">
+                <a href="#auth" class="header-item about-me">Про мене</a>
+                <img src="./img/separator.png" alt="">
+                <a href="#rit" class="header-item service">Ритуали та інша допомога</a>
+                <img src="./img/separator.png" alt="">
+                <a href="#footr" class="header-item contacts">Контакти</a>
             </div>
-            <img class="miсro" src="img/micro.svg" alt="">
+            <div class="burger">
+                <a href="" class="burger-img"><img src="./img/burger.png" alt=""></a>
+            </div>
+
+        </header>
+    </div>
+    <div class="slider-wrap" id="sldr">
+        <div class="slides-container">
+            <img src="./img/slider/1.jpg" alt="" class="slider-img f-img">
+            <img src="./img/slider/2.jpg" alt="" class="slider-img s-img">
+        </div>
+        <div class="article-wrap">
+            <h1 class="article">«Ні одна сива брехня да не стане правдою для мене, ні одна удушлива догма да не стеснить моє перо!»</h1>
+            <h2 class="author-article">Антон Шандор ЛаВей</h2>
         </div>
     </div>
-    <div class="goods-container">
-        <div class="text-container">
-            <p>Популярне</p>
-            <a href="">Все меню</a>
-        </div>
-        <div class="goods">
-            <div class="item">
-                <img src="img/goods/1.png" alt="">
-                <button class="heart-button"><img class="heart-img" src="img/heart.svg" alt=""></button>
-                <p class="description">Опис</p>
-                <div class="buy">
-                    <div class="price">
-                        <p>300gr</p>
-                        <p>100 UAH</p>
-                    </div>
-                    <div class="add-item">
-                        <button class="add"></button>
-                    </div>
-                </div>
+    <main class="main">
+        <div class="about-author" id="auth">
+            <div class="f-container">
+                <img class="illy" src="./img/illy.jpg" alt="">
+                <ul class="describe-author">
+                    <li>Я отримав здібності при народженні, коли народився мертвонародженим. З п'яти років бачив духів і проводив багато часу в лісі, мені тоді здавалося це уявою та фантазією, але навіть тоді відбувалися дивні незрозумілі речі, духи мені допомагали у небезпечних ситуаціях вижити, я відчував кохання та підтримку від них.</li>
+                    <li>З 8 років ходив до протестантської церкви та вивчав християнство. У цей період в життя увійшли відчуття тонкого світу.</li>
+                    <li>У 13 років я вперше побачив мертвого, який вийшов зі мною на контакт і моє життя почало координально змінюватися</li>
+                    <li>У 14 років я провів свій перший ритуал, я знав, що і як треба робити, але не разу не читав на той момент ніякої магічної літератури, заговорив амулет, який приносив своєму власникові успіх. Після першого вдалого ритуалу, став практикуватися з камінням і свічками, магією крові, почав проводити більш усвідомлені ритуали, але все одно ставився до всього скептично і дивувався, що я роблю реально працює.</li>
+                    <li>Тому вступив на факультет радіофізики і паралельно навчався гіпнозу, я дуже хотів допомагати людям не тільки магічно, а й психотерапевтично, а так само зрозуміти, печему те що роблю я працює, але багато хто вважає це вигадкою та обманом.</li>
+                </ul>
             </div>
-            <div class="item">
-                <img src="img/goods/2.png" alt="">
-                <button class="heart-button"><img class="heart-img" src="img/heart.svg" alt=""></button>
-                <p class="description">Опис</p>
-                <div class="buy">
-                    <div class="price">
-                        <p>300gr</p>
-                        <p>100 UAH</p>
-                    </div>
-                    <div class="add-item">
-                        <button class="add"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/goods/3.png" alt="">
-                <button class="heart-button"><img class="heart-img" src="img/heart.svg" alt=""></button>
-                <p class="description">Опис</p>
-                <div class="buy">
-                    <div class="price">
-                        <p>300gr</p>
-                        <p>100 UAH</p>
-                    </div>
-                    <div class="add-item">
-                        <button class="add"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/goods/4.png" alt="">
-                <button class="heart-button"><img class="heart-img" src="img/heart.svg" alt=""></button>
-                <p class="description">Опис</p>
-                <div class="buy">
-                    <div class="price">
-                        <p>300gr</p>
-                        <p>100 UAH</p>
-                    </div>
-                    <div class="add-item">
-                        <button class="add"></button>
-                    </div>
-                </div>
+            <div class="s-container">
+                У 20 років у мене загострилися ведення та чуття, став займатися усвідомленими снами, шаманізмом вивчати демонологію, практикувати різні магічні течії.
+У 23 роки я нарешті отримав перші відповіді і став на шлях Жреця, коли боги вийшли на зв'язок і показали мені, що я пов'язаний із зіркою Сіріус і душами, які приходять у цей світ, щоб допомагати людям усвідомлювати свою місію і духовно рости. У цьому віці став активно практикувати цілісність і вивчати медицину
+У 25 років приступив до набору учнів та послідовників.
             </div>
         </div>
-    </div>
+        <div class="rituals-wrap" id="rit">
+            <h1>Дещо з моїх робіт</h1>
+            <div class="rituals">
+                <div class="ritual-item"><img class="ritual-img" src="./img/1.jpg"></div>
+                <div class="ritual-item"><img class="ritual-img" src="./img/2.jpg"></div>
+                <div class="ritual-item"><img class="ritual-img" src="./img/3.jpg"></div>
+                <div class="ritual-item"><img class="ritual-img" src="./img/4.jpg"></div>
+                <div class="ritual-item"><img class="ritual-img" src="./img/5.jpg"></div>
+                <div class="ritual-item"><img class="ritual-img" src="./img/6.jpg"></div>
+                <div class="ritual-item"><img class="ritual-img" src="./img/7.jpg"></div>
+                <div class="ritual-item"><img class="ritual-img" src="./img/8.jpg"></div>
+                <div class="ritual-item"><img class="ritual-img" src="./img/9.jpg"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-wrap" id="footr">
+        <h2>Зв'язатись зі мною</h2>
+        <div class="footer">
+            <div class="f-footer-container">
+                <div class="footer-item"><a href="tel:+380985637401"><img src="./img/call.png" alt=""></a></div>
+                <div class="footer-item"><a href="mailto:example@gmail.com"><img src="./img/mail.png" alt=""></a></div>
+            </div>
+            <div class="s-footer-container">
+                <div class="footer-item"><a href="https://www.instagram.com/illy_persanov/"><img src="./img/instagram-img.png" alt=""></a></div>
+                <div class="footer-item"><a href="https://t.me/OracleIllya"><img src="./img/telegram-img.png" alt=""></a></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
