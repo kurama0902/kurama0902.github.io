@@ -346,6 +346,10 @@ body {
     z-index: 99999;
 }
 
+.choose-language img {
+    display: block;
+}
+
 .choose-language:hover {
     padding: 10px;
     border: 1px solid white;
@@ -357,23 +361,11 @@ body {
     display: block;
 }
 
-.choose-language:hover img {
-    display: block;
-}
-
-.choose-language:hover .earth {
-    display: none;
-}
-
 .choose-language a {
     display: none;
     padding: 10px;
     transition: all .5s;
     border-radius: 30px;
-}
-
-.choose-language img {
-    display: none;
 }
 
 body .choose-language .earth {
