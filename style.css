@@ -339,21 +339,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: absolute;
     align-items: center;
-    position: fixed;
-    top: 45%;
-    right: 10px;
     z-index: 99999;
 }
+
+/* .lang-item {
+    position: relative;
+    width: 40px;
+    height: 40px;
+} */
 
 .choose-language img {
     display: block;
 }
 
 .choose-language:hover {
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 30px;
     gap: 10px;
 }
 
@@ -363,9 +364,22 @@ body {
 
 .choose-language a {
     display: none;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 4px;
     transition: all .5s;
-    border-radius: 30px;
+}
+
+.header-nav-f {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 30px;
+}
+
+.lang-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
 }
 
 body .choose-language .earth {
@@ -375,7 +389,7 @@ body .choose-language .earth {
 }
 
 .language:hover {
-    background-color: #aea4ae;
+    background-color: #f1090971;
 }
 
 @keyframes loop {
@@ -388,7 +402,7 @@ body .choose-language .earth {
     src: url("font.ttf");
 }
 
-@media (max-width:645px) {
+@media (max-width:710px) {
 
     .header-nav {
         display: none;
