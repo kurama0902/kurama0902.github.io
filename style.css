@@ -33,6 +33,7 @@ body {
 }
 
 .header-wrap {
+    top: 0;
     position: fixed;
     width: 100%;
     background-color: #252425;
@@ -48,20 +49,40 @@ body {
 
 .header-item {
     display: flex;
+    position: relative;
     align-items: center;
     font-family: 'Crimson Text', serif;
     font-style: oblique;
     font-size: large;
     color: white;
     text-decoration: none;
+    border-radius: 6px;
+    padding: 10px;
     transition: all .5s;
+    overflow-y: hidden;
+}
+
+.header-item span {
+    position: absolute;
+    transform: translateY(40px);
+    transition: transform .7s;
+}
+
+.header-item p {
+    transition: transform .7s;
+}
+
+.header-item:hover p {
+    transform: translateY(-40px);
+}
+
+.header-item:hover span {
+    transform: translateY(0px);
 }
 
 .header-item:hover {
     background-color: white;
     color: grey;
-    border-radius: 6px;
-    padding: 10px;
 }
 
 .slides-container {
@@ -178,6 +199,8 @@ body {
 .ritual-item {
     position: relative;
     transition: all .5s;
+    border: 10px solid transparent;
+    transition: border .7s;
 }
 
 .ritual-item p {
@@ -188,18 +211,17 @@ body {
     opacity: 0;
     transition: all .3s;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     text-align: center;
 }
 
 .ritual-item:hover {
-    background-color: #302e30;
-    padding: 10px;
+    border-color: rgb(204, 168, 121);
 }
 
 .ritual-item:hover p {
     background-color: #302e307b;
     color: rgb(255, 255, 255);
-    font-size: 24px;
     opacity: 1;
 }
 
@@ -402,7 +424,7 @@ body .choose-language .earth {
     src: url("font.ttf");
 }
 
-@media (max-width:710px) {
+@media (max-width:756px) {
 
     .header-nav {
         display: none;
